@@ -4,20 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey-Form</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="CSS/stylesheet.css">
 </head>
 <body>
      <!--Navigation Bar-->
      <header class="header">
       <ul class="nav-header">
-          <li><a href="">Home</a></li>
-          <li><a href="">Our Services</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contat Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contat Us</a></li>
       </ul>
       </header>  
   <h1>Metacare Medical</h1>
   <h4>"We Care, God Cures"</h4>
-  
+  <div id="slider">
+		<figure>
+			<img src="Images/image1.jpg">
+      <img src="Images/image2.jpg">
+      <img src="Images/image3.jpg">
+      <img src="Images/image4.jpg">
+      <img src="Images/image5.jpg">
+		</figure>
+	</div>
+      <!--Survey Form-->
+      <form action="" method="" id="survey-form">
+        <h2>Patient Feedback Form</h2>
+        <hr>
+         <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Indicate your Full name">
+         </div>
+         <div class="form-control">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Indicate your Email Address">
+       </div>
+       <div class="form-control">
+        <label for="adress">Physical Address</label>
+        <input type="adress" id="address" placeholder="Indicate your Physical Address">
+     </div>
+       <div class="form-control">
+          <label for="gender">Choose your Gender</label>
+          <label for="gender_1">
+              <input type="radio" id="gender_1">Male</label>
+          <label for="gender_2">
+              <input type="radio" name="gender_2">Female</label>
+       </div>
+       <div class="form-control">
+        <label for="department">Select the Department Visited</label>
+<select name="depatment" id="department">
+            <option value="outpatient">Outpatient</option>
+            <option value="radiology">Radiology</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="ob/gyn">OB/GYN</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="urology">Urology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="oncology">Oncology</option>
+            </select>
+            </div>
+            <div class="form-control">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+
+
+
+
+
+
 </body>
 </html>
